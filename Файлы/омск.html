@@ -1,0 +1,21 @@
+<script>
+function salary (sarplata) {
+    if (sarplata<100000) {
+        var oklad = sarplata- (sarplata*0.35);
+        console.log(oklad);
+    }
+    else {
+        var oklad = sarplata- (sarplata*0.45);
+    }
+    return oklad;
+}
+var sarplata = prompt('Введите оклад', 100);
+alert('чистый оклад с вычетами' =  + salary(sarplata));
+
+var ok= confirm('Продолжить вычесления?');
+while (ok) {
+    sarplata = prompt('Введите оклад', 100);
+    alert ('чистый оклад с вычетами = ' + salary(sarplata));
+    var ok= confirm('Продолжить вычисление?');
+}
+</script>

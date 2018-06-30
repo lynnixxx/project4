@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Mysh</title>
+    <script>
+        var change=500;
+        function pagetime(){
+            alert('Прошло 5 секунд');
+        }
+        function hell(){
+            alert('Добро пожаловать в лучший ресторан');
+        }
+        function price(){
+            alert ('Цена за порцию 100 рублей');
+            alert ('Долго думаете, цена теперь 200 рублей');
+        }   
+         </script>
+</head>
+<body onloads="setInterval('pagetime()',change)">
+    <h1>Самый лучший ресторан</h1>
+    <input type=button value="Hell..." onclick="hell()">
+    <h1>Сделайте заказ</h1>
+    <a href="#" onmouseover="price();">Котлетки с пюрешкой</a>
+</body>
+</html>
